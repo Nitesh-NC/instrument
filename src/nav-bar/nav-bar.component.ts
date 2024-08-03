@@ -3,6 +3,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import{faTwitter, fa42Group} from '@fortawesome/free-brands-svg-icons';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { data_list } from '../assets/data';
 
 @Component({
   selector: 'app-nav-bar',

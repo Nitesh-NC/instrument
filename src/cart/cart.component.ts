@@ -4,6 +4,13 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { CartService } from '../cart.service';
 import { Router } from '@angular/router';
 
+
+interface cart{
+  image: string;
+  name: string;
+  price: number;
+}
+
 @Component({
   selector: 'app-cart',
   standalone: true,
@@ -12,7 +19,7 @@ import { Router } from '@angular/router';
   styleUrl: './cart.component.css',
 })
 export class CartComponent {
-  item: any[] = [];
+  item: cart[] = [];
 
   constructor(private cartService: CartService, private path: Router) {}
 
@@ -20,7 +27,7 @@ export class CartComponent {
     this.item = this.cartService.getItems();
   }
 
-  remove(item: any): void {
+  remove(item: cart): void {
     this.cartService.clearCart(item);
     this.item = this.cartService.getItems();
   }
