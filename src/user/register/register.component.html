@@ -1,0 +1,16 @@
+<div>
+    <form (ngSubmit)="onRegister()">
+      <label>UserName</label>
+      <input type="text" [(ngModel)]="userName" name="userName" />
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" name="email" />
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password" name="password" />
+      <label>Confirm Password</label>
+      <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" />
+      <button type="submit">Register</button>
+    </form>
+  
+    <a [routerLink]="['/login']">Register</a>
+  </div>
+  

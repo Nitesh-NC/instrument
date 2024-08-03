@@ -1,0 +1,11 @@
+<div>
+  <form (ngSubmit)="onLogin()">
+    <label>UserName</label>
+    <input type="text" [(ngModel)]="userName" name="userName" />
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password" name="password" />
+    <button type="submit">Login</button>
+  </form>
+
+  <a [routerLink]="['/register']">Register</a>
+</div>
