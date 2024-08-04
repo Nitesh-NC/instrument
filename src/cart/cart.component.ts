@@ -23,11 +23,11 @@ export class CartComponent {
 
   constructor(private cartService: CartService, private path: Router) {}
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.item = this.cartService.getItems();
   }
 
-  remove(item: cart): void {
+  remove(item: cart){
     this.cartService.clearCart(item);
     this.item = this.cartService.getItems();
   }

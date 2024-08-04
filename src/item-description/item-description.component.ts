@@ -28,16 +28,16 @@ export class ItemDescriptionComponent {
     private path: Router
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit(){
     const id = this.router.snapshot.paramMap.get('id');
     this.item = data_list.find((item) => item.id === id);
   }
 
-  goBack(): void {
+  goBack(){
     this.location.back();
   }
 
-  addToCart(): void {
+  addToCart(){
     const user = localStorage.getItem('userCredentials');
     if (user) {
       this.cartService.addToCart(this.item);

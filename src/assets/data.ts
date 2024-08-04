@@ -38,7 +38,7 @@ export const data_list = [
         description: "88 fully weighted graded hammer action keys, amazing sounds and USB MIDI out",
         category: "sales",
         price: 78000,
-        rating:4.8
+        rating:4.3
     },
     {
         id: "3",
