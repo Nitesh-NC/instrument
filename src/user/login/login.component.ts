@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
+import { NavBarComponent } from '../../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterModule,FormsModule],
+  imports: [RouterModule,FormsModule, NavBarComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

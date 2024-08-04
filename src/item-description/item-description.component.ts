@@ -31,6 +31,8 @@ export class ItemDescriptionComponent {
   ngOnInit(){
     const id = this.router.snapshot.paramMap.get('id');
     this.item = data_list.find((item) => item.id === id);
+    console.log(this.item);
+    
   }
 
   goBack(){
@@ -42,6 +44,8 @@ export class ItemDescriptionComponent {
     if (user) {
       this.cartService.addToCart(this.item);
       this.path.navigate(['/cart']);
+      console.log(this.item);
+      
     } else {
       alert('login first');
       this.path.navigate(['/login']);

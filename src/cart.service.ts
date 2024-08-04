@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
-interface cart{
+interface cart {
+  id: string;
   image: string;
   name: string;
   price: number;
@@ -10,16 +11,16 @@ interface cart{
   providedIn: 'root',
 })
 export class CartService {
-  private storageKey = 'cartItem'
+  private storageKey = 'cartItem';
 
-  constructor(){
+  constructor() {
     this.loadItems();
   }
 
   addToCart(item: cart) {
     const items = this.getItems();
-    items.push(item)
-    this.saveItems(items)
+    items.push(item);
+    this.saveItems(items);
   }
 
   getItems() {
@@ -29,7 +30,9 @@ export class CartService {
 
   clearCart(item: cart) {
     let items = this.getItems();
-    items = items.filter((i: cart) => i.name !== item.name || i.price !== item.price || i.image !== item.image);
+    // items = items.filter((i: cart) => i.name !== item.name || i.price !== item.price || i.image !== item.image)
+    const index = items.findIndex((i: cart) => i.id === item.id);
+    items.splice(index);
     this.saveItems(items);
   }
 

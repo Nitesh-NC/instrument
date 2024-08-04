@@ -376,3 +376,8 @@ export const drums = [
         rating: 4.3
     }
 ];
+
+export const PROMO = [
+    { code: 'HELLO', discount: 10 }, 
+    { code: 'HI', discount: 20 }, 
+  ];
