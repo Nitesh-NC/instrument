@@ -1,7 +1,7 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [itemCount]="itemCount"></app-nav-bar>
 
 <div class="p-32">
-  <table class="w-full ">
+  <table class="w-full  ">
     <thead>
       <tr class="text-slate-500 ">
         <th class="text-left">Item</th>
@@ -13,13 +13,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of item">
-        <td><img src={{item.image}} alt="" class="w-[50px]" /></td>
+      <tr *ngFor="let item of item; let i = index" [ngClass]="getColorClass(i)">
+        <td class="rounded-lg"><img src={{item.image}} alt="" class="w-[50px] rounded-lg" /></td>
         <td>{{ item.name }}</td>
         <td>{{ item.price }}</td>
         <td>1</td>
         <td>{{ item.price }}</td>
-        <td><button (click)="remove(item)" class="bg-red-500 px-3 py-1 rounded-lg text-white">Delete</button></td>
+        <td class="w-2 rounded-lg"><button (click)="remove(item)" class="bg-red-500 px-3 py-1 rounded-lg text-white ">Delete</button></td>
         <hr />
       </tr>
     </tbody>
@@ -45,7 +45,7 @@
         <hr class="h-0.5 bg-slate-200 rounded-full" />
         <div class="flex justify-between">
           <p class="text-slate-900">Total</p>
-          <p class="text-green-600">Rs {{getTotal() + 50}}</p>
+          <p class="text-green-600">Rs {{getTotal()}}</p>
         </div>
         <div class="felx justify-start mt-4">
           <button

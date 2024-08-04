@@ -30,9 +30,9 @@ export class CartService {
 
   clearCart(item: cart) {
     let items = this.getItems();
-    // items = items.filter((i: cart) => i.name !== item.name || i.price !== item.price || i.image !== item.image)
-    const index = items.findIndex((i: cart) => i.id === item.id);
-    items.splice(index);
+    items = items.filter((i: cart) => i.name !== item.name || i.price !== item.price || i.image !== item.image)
+    // const index = items.findIndex((i: cart) => i.id === item.id);
+    // items.splice(index);
     this.saveItems(items);
   }
 

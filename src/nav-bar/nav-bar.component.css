@@ -72,3 +72,19 @@ nav{
     width: 50px;
     translate: -50px;
 }
+
+.cart-icon {
+    position: relative;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: 9px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 4px;
+    font-size: 7px;
+  }
+  
