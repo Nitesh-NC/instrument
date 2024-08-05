@@ -1,0 +1,32 @@
+.main{
+
+}
+.img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+    justify-content: center;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;}
+
+    h1, h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+p, ul {
+    text-align: justify;
+    font-size:larger;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}

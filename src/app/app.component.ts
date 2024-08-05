@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CategoryComponent } from '../category/category.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CategoryComponent],
+  imports: [RouterOutlet,CategoryComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
