@@ -378,6 +378,6 @@ export const drums = [
 ];
 
 export const PROMO = [
-    { code: 'HELLO', discount: 5 }, 
-    { code: 'HI', discount: 2 }, 
+    { code: 'HELLO', discount: 2 }, 
+    { code: 'HI', discount: 1 }, 
   ];

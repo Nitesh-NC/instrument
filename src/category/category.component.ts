@@ -19,6 +19,7 @@ export class CategoryComponent {
   faStar = faStar;
   faStarHalfStroke = faStarHalfStroke;
   itemCount: number = 0;
+  
 
   constructor(private router: Router){}
 

@@ -25,8 +25,11 @@ export class CartComponent {
   promoCode: string = '';
   discount: number = 0;
   itemCount: number = 0;
+  items = [];
 
-  constructor(private cartService: CartService, private path: Router) {}
+  constructor(private cartService: CartService, private path: Router) {
+    
+  }
 
   ngOnInit() {
     this.item = this.cartService.getItems();
