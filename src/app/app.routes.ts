@@ -9,6 +9,7 @@ import { ViolinListComponent } from '../violin-list/violin-list.component';
 import { DrumListComponent } from '../drum-list/drum-list.component';
 import { RegisterComponent } from '../user/register/register.component';
 import { LoginComponent } from '../user/login/login.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 export const routes: Routes = [
     {
@@ -41,5 +42,8 @@ export const routes: Routes = [
     {
         path: 'order', component:PlaceOrderComponent
 
+    },
+    {
+        path:'Aboutus' , component:AboutusComponent
     }
 ];
