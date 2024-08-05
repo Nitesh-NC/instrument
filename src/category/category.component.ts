@@ -5,11 +5,12 @@ import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule, Router } from '@angular/router';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { FooterComponent } from '../app/footer/footer.component';
 
 @Component({
   selector: 'app-category',
   standalone: true,
-  imports: [CommonModule,FontAwesomeModule,RouterModule, NavBarComponent],
+  imports: [CommonModule,FontAwesomeModule,RouterModule, NavBarComponent,FooterComponent],
   templateUrl: './category.component.html',
   styleUrl: './category.component.css'
 })
