@@ -10,6 +10,8 @@ import { DrumListComponent } from '../drum-list/drum-list.component';
 import { RegisterComponent } from '../user/register/register.component';
 import { LoginComponent } from '../user/login/login.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { ProfileComponent } from './account/profile/profile.component';
+import { ChangepasswordComponent } from './account/changepassword/changepassword.component';
 
 export const routes: Routes = [
     {
@@ -45,5 +47,15 @@ export const routes: Routes = [
     },
     {
         path:'Aboutus' , component:AboutusComponent
-    }
+    },
+    
+    { path: 'profile', component: ProfileComponent
+
+     },
+     {
+      path:'changepassword', component: ChangepasswordComponent
+     }
+
+
+    
 ];

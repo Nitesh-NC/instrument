@@ -1,0 +1,38 @@
+.main{
+    
+        width: 80%;
+        height: 800px;
+        background-color:whitesmoke;
+        color:black;
+        border: 2px  #636060;
+        padding: 10px;
+        margin: 10px; 
+        /* text-align: center; */
+        display: flex;
+        justify-content: space-between;
+      
+}
+.sidebar{
+    /* width:30%; */
+    height: 780px;
+    /* border: 2px solid #636060; */
+    display: block;
+
+}
+.icon{
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+.icon:hover{
+    background-color: rgb(138, 225, 225);
+    
+    
+}
+
+.main2{
+     /* justify-content: end; */
+     display: flex;
+     justify-content: center;
+     align-items:start;
+}

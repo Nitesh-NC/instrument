@@ -1,0 +1,54 @@
+<app-nav-bar></app-nav-bar>
+<div style="display: flex; align-items: center; justify-content: center; ">
+<div class="main">
+  <div class="sidebar" style="flex: 1;">
+    <div class="icon"><fa-icon style="margin:20px;" [icon]="faUser"></fa-icon>
+        <a href="" style="font-size: larger; margin: 20px; text-align: center;">Basic information</a>
+    </div>
+    <div class="icon"><fa-icon style="margin:20px;" [icon]="faLock"></fa-icon>
+         <a style="font-size: larger; margin: 20px; text-align: center;" [routerLink]="['/Changepassword']">Change password</a>
+    </div>
+    <div class="icon"><fa-icon style="margin:20px;" [icon]="faClock"></fa-icon>
+        <a href="#" style="font-size: larger; margin: 20px; text-align: center;">Order history</a>
+    </div>
+  </div>
+  <div class="main1" style="flex: 2;">
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <div class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="name">Username</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="text" id="name" name="name" [(ngModel)]="user.name" required>
+      </div>
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="name">Firstname</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="text" id="name" name="name" [(ngModel)]="user.firstname" required>
+      </div>
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="name">Lastname</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="text" id="name" name="name" [(ngModel)]="user.lastname" required>
+      </div>
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="email">Birthday</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="date" id="date" name="date" [(ngModel)]="user.birthday" required>
+      </div>
+    
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="email">Email-Address</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="email" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="email">Phone Number</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="number" id="number" name="number" [(ngModel)]="user.phonenumber" required>
+      </div>
+      <div  class="" style="display: flex; margin: 10px 10px; font-size: x-large; flex-direction: column;">
+        <label for="email">Address</label>
+        <input style="background-color: rgb(213, 226, 226); border:2px; border-radius: 10px; padding: 5px;" type="text" id="text" name="text" [(ngModel)]="user.address" required>
+      </div>
+    
+      <button style="margin: 10px; border: 2px; padding: 10px; background-color:rgb(246, 133, 92); border-radius: 15px; font-size: x-large;" type="submit">Changes info</button>
+    </form>
+  </div>
+  <div class="main2" style="flex: 1;">
+    <img style="border-radius: 50%;margin-top: 50px ;" src="assets/avatar.jpg" alt="profile">
+  </div> 
+</div>
+</div>
